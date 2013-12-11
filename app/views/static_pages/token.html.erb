@@ -1,1 +1,5 @@
-<script type="text/javascript" src="http://staging.forms.automationhero.com/<%= @token %>.js"></script>
+<% if Rails.env.development? %>
+  <script type="text/javascript" src="http://forms.lvh.me:3001/<%= @token %>.js"></script>
+<% elsif Rails.env.staging? %>
+  <script type="text/javascript" src="http://staging.forms.automationhero.com/<%= @token %>.js"></script>
+<% end %>

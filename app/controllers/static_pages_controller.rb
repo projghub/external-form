@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
     }
 
     @form = HtmlDecorator.new({ form: form, logger: Rails::logger }).render
-    logger.info "FORM " + @form.inspect
+    #logger.info "FORM " + @form.inspect
 
     respond_to do |format|
       format.js
