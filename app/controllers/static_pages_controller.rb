@@ -24,4 +24,7 @@ class StaticPagesController < ApplicationController
       format.js
     end
   end
+
+  def example
+  end
 end
