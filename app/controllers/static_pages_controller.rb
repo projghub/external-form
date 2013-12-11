@@ -25,6 +25,7 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def example
+  def token
+    @token = params[:token]
   end
 end
